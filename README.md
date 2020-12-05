@@ -17,6 +17,6 @@ Sample Automation Framework using TestNg,Selenium,PageObject
 1. Git clone this repo 
    
    *`git clone git@github.com:swnathan/TestNGSample.git`
-2. Navigate to just cloned folder Testing 
+2. Navigate to just cloned folder Sample 
 3. Import the project as a *Maven* project in IDE
 4. Run as TestNG Suite  using the Testng.xml ( \Sample\src\test\java\testng.xml)
