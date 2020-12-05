@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="16541" started-at="2020-12-05T11:28:38 IST" finished-at="2020-12-05T11:28:55 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="16541" started-at="2020-12-05T11:28:38 IST" finished-at="2020-12-05T11:28:55 IST">
+      <class name="test.ShoppingTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.ShoppingTest@37574691]" name="beforeTest" is-config="true" duration-ms="4821" started-at="2020-12-05T11:28:38 IST" finished-at="2020-12-05T11:28:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testProductDetails()[pri:3, instance:test.ShoppingTest@37574691]" name="testProductDetails" duration-ms="10275" started-at="2020-12-05T11:28:43 IST" finished-at="2020-12-05T11:28:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductDetails -->
+        <test-method status="PASS" signature="testShopping()[pri:1, instance:test.ShoppingTest@37574691]" name="testShopping" duration-ms="8326" started-at="2020-12-05T11:28:43 IST" finished-at="2020-12-05T11:28:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShopping -->
+        <test-method status="FAIL" signature="testFilteredProductGrid()[pri:2, instance:test.ShoppingTest@37574691]" name="testFilteredProductGrid" duration-ms="10224" started-at="2020-12-05T11:28:43 IST" finished-at="2020-12-05T11:28:53 IST">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SNARAYA-IN-LE02', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}), userDataDir=C:\Users\snaraya\AppData\Local\Temp\scoped_dir10096_1484603509}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60321}, acceptInsecureCerts=false, browserVersion=86.0.4240.198, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 2d04ce250d22615ab9ce2279c54a68dc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SNARAYA-IN-LE02', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}), userDataDir=C:\Users\snaraya\AppData\Local\Temp\scoped_dir10096_1484603509}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60321}, acceptInsecureCerts=false, browserVersion=86.0.4240.198, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:virtualAuthenticators=true}]
+Session ID: 2d04ce250d22615ab9ce2279c54a68dc
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:118)
+at net.serenitybdd.core.pages.WebElementFacadeImpl.getTagName(WebElementFacadeImpl.java:1006)
+at net.serenitybdd.core.pages.WebElementExpectations.isAFormElement(WebElementExpectations.java:162)
+at net.serenitybdd.core.pages.WebElementExpectations.isDisabledField(WebElementExpectations.java:158)
+at net.serenitybdd.core.pages.WebElementExpectations.access$000(WebElementExpectations.java:10)
+at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:64)
+at net.serenitybdd.core.pages.WebElementExpectations$3.apply(WebElementExpectations.java:55)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:871)
+at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:707)
+at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:946)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
+at com.sun.proxy.$Proxy16.click(Unknown Source)
+at test.ShoppingTest.testFilteredProductGrid(ShoppingTest.java:41)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFilteredProductGrid -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.ShoppingTest@37574691]" name="afterTest" is-config="true" duration-ms="1357" started-at="2020-12-05T11:28:53 IST" finished-at="2020-12-05T11:28:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- test.ShoppingTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
